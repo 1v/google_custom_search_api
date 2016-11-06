@@ -158,7 +158,7 @@ module GoogleCustomSearchApi
   # http://code.google.com/apis/customsearch/v1/using_rest.html#query-params
   def url(query, opts = {})
     opts[:q] = query
-    opts[:alt] ||= "json"]
+    opts[:alt] ||= "json"
     opts[:api_key] ||= GOOGLE_SEARCH_CX
     uri = Addressable::URI.new
     uri.query_values = opts
